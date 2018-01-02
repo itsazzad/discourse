@@ -4,7 +4,7 @@
 tap 'homebrew/dupes'
 
 # install the gcc compiler required for ruby
-brew 'apple-gcc42'
+brew 'gcc'
 
 # you probably already have git installed; ensure that it is the latest version
 brew 'git'

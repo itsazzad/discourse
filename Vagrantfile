@@ -44,5 +44,6 @@ Vagrant.configure("2") do |config|
 
   nfs_setting = RUBY_PLATFORM =~ /darwin/ || RUBY_PLATFORM =~ /linux/
   config.vm.synced_folder ".", "/vagrant", id: "vagrant-root"
+  config.vm.synced_folder "../discourse-adplugin/", "/vagrant/plugins/discourse-adplugin"
 
 end
